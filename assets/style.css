@@ -1,0 +1,17 @@
+#businessCardForm{
+    height: 50vh;
+    width: 50%;
+    margin: auto;
+    background-color: aqua;
+}
+#businessCardForm input{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    width: 20rem;
+}
+label, h3{
+    margin-left: 1rem;
+}
+#submitButton{
+    margin: 1rem 0 0 5rem;
+}
