@@ -5,23 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Card Generator</title>
+    <link rel="stylesheet" href="./assets/style.css">
+  <script
+      src="https://kit.fontawesome.com/4ca77255f7.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <div id="businessCardForm"> 
      <h3>Kindly fill in the details to Generate the Business card</h3>
      <form >
          <label for="fName">First Name:</label>
-         <input type="text" name="fName" id="fName"><br>
+         <input type="text" name="fName" id="fName" required><br>
          <label for="lName">Last Name:</label>
-         <input type="text" name="lName" id="lName"><br>
+         <input type="text" name="lName" id="lName" required><br>
          <label for="phoneNumber">Phone Number:</label>
-         <input type="text" name="phoneNumber" id="phoneNumber"><br>
-         <label for="email">Email</label>
-         <input type="text" name="email" id="email" >br
-         <label for="image">Image</label>
-         <input type="text" name="image" id="image"><br>
-         <button type="submit">submit</button>
+         <input type="tel" name="phoneNumber" id="phoneNumber" required><br>
+         <label for="email">Email:</label>
+         <input type="text" name="email" id="email" required><br>
+         <label for="image">Image:</label>
+         <input type="text" name="image" id="image" required><br>
+         <button type="submit" id="submitButton">Generate</button>
      </form>
     </div>
+    <div id="cards">
+        </div>
+    <!-- <div id="card">
+        <div id="part1">
+        <img id="image" src="./assets/images/denis.jpeg" alt="profile">
+        <p>Name: KIPYEGON DENIS</p>
+        </div>
+        <div is="part2">
+            <h3>Contact  Infomation</h3>
+            <p><i class="fa-solid fa-mobile-screen"> 0703361342</i></p>
+            <p><i class="fa-solid fa-envelope"> denisdelaki@gmail.com</i></p>
+            <p>Company: Equity Bank</p>
+        </div>
+    </div>
+    </div> -->
+    <script src="./assets/script.js"></script>
 </body>
 </html>

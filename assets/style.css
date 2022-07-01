@@ -1,17 +1,40 @@
 #businessCardForm{
     height: 50vh;
-    width: 50%;
+    width: 35%;
     margin: auto;
     background-color: aqua;
+    font-size: 1.3rem;
+    box-shadow: 1rem 1rem;
 }
 #businessCardForm input{
     margin-bottom: 1rem;
     margin-left: 1rem;
     width: 20rem;
+    height: 1.7rem;
+    box-shadow: 0.2rem 0.2rem;
+    border: none;
 }
 label, h3{
     margin-left: 1rem;
 }
 #submitButton{
-    margin: 1rem 0 0 5rem;
+    margin: 0.5rem 0 0 5rem;
+    width: 13rem;
+    height: 2.3rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem;
+}
+#card{
+    display: flex;
+    height: 250px;
+    width: 450px;
+    border: 1px solid black;
+    background: linear-gradient(to right, yellow, brown);
+}
+#image{
+    height: 150px;
+    border-radius: 300px;
+    margin: 0.3rem;
 }

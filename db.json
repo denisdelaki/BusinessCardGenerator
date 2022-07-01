@@ -1,0 +1,11 @@
+{
+  "card": [
+    {
+      "fName": "Kipyegon",
+      "lName":"Denis",
+      "phoneNumber": "0703361342",
+      "image":"./assets/images/denis.jpeg",
+      "email":"denisdelaki@gmail.com"
+    }
+  ]
+}
