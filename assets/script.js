@@ -1,7 +1,8 @@
+const cardForm = document.getElementById("businessCardForm");
 const generate = document.getElementById("submitButton");
 const cards=document.getElementById('cards')
 //event listener
-generate.addEventListener('submit', handleSubmit)
+cardForm.addEventListener('submit', handleSubmit)
  
 //handleevent 
 function handleSubmit(e) {
@@ -13,8 +14,9 @@ function handleSubmit(e) {
         email: e.target.email.value,
         image: e.target.image.value
     }
+     renderCard(card);
     postCard(card)
-    renderCard(card)
+   
     
 }
 //render the data
@@ -44,7 +46,17 @@ function renderCard(card) {
     envelope.className = "fa-solid fa-envelope";
     envelope.textContent=`${card.email}`
     Email.appendChild(envelope)
-     
+    let print = document.createElement('button')
+    print.textContent = "Print"
+    print.addEventListener('click', printCard)
+    function printCard() {
+        let cardContents = document.getElementById('card').innerHTML
+        let a = window.open('', '', 'height=300, width= 450')
+        a.document.write(cardContents)
+        a.document.close()
+        a.print()
+
+    }
     part1.appendChild(cardImage)
     part1.appendChild(cardName)
     myCard.appendChild(part1)
@@ -53,6 +65,7 @@ function renderCard(card) {
     part2.appendChild(Email)
     myCard.appendChild(part2)
     cards.appendChild(myCard)
+    cards.appendChild(print)
     
 }
 //fetch the data
@@ -67,7 +80,7 @@ function getCard() {
 }
 function postCard(card) {
     fetch("http://localhost:3000/card", {
-        method: "POST", 
+        method: "POST",
         headers: {
             "Content-Type":"application/json"
         },
@@ -77,6 +90,7 @@ function postCard(card) {
         .then(card => {
         console.log(card)
     })
+    
     
 }
  function iniatialize() {
