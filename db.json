@@ -1,11 +1,20 @@
 {
   "card": [
     {
-      "fName": "Kipyegon",
-      "lName":"Denis",
-      "phoneNumber": "0703361342",
-      "image":"./assets/images/denis.jpeg",
-      "email":"denisdelaki@gmail.com"
+      "fName": "KIPYEGON",
+      "lName": "DENIS",
+      "phoneNumber": "0703103852",
+      "email": "denis.kipyegon@student.moringaschool.com",
+      "image": "https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "id": 1
+    },
+    {
+      "fName": "KIPYEGON",
+      "lName": "DENIS",
+      "phoneNumber": "0703103852",
+      "email": "denisdelaki@gmail.com",
+      "image": "./assets/images/denis.jpeg",
+      "id": 2
     }
   ]
 }
