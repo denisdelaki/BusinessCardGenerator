@@ -70,7 +70,7 @@ function renderCard(card) {
 }
 //fetch the data
 function getCard() {
-  fetch("http://localhost:3000/card")
+  fetch("https://denisdelaki.github.io/BusinessCardGenerator/db.json")
     .then((res) => res.json())
     .then((cards) =>
       cards.forEach((card) => {
@@ -79,17 +79,17 @@ function getCard() {
     );
 }
 function postCard(card) {
-    fetch("http://localhost:3000/card", {
-        method: "POST",
-        headers: {
-            "Content-Type":"application/json"
-        },
-        body:JSON.stringify(card)
+    fetch("https://denisdelaki.github.io/BusinessCardGenerator/db.json", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(card),
     })
-        .then(res => res.json())
-        .then(card => {
-        console.log(card)
-    })
+      .then((res) => res.json())
+      .then((card) => {
+        console.log(card);
+      });
     
     
 }
