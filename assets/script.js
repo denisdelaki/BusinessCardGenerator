@@ -18,7 +18,14 @@ function handleSubmit(e) {
     
 }
 //fetch the data
-function getCard(cards) {
+function getCard() {
+    fetch("http://localhost:3000/cards")
+        .then(res => res.json())
+    .then(cards=>cards.forEach(card => {
+       renderCard(card) 
+    }))
+}
+function renderCard(card) {
     
 }
  function iniatialize() {
